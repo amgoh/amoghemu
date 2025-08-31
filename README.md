@@ -1,2 +1,4 @@
 # amoghemu
-Game Boy emulator written in C++
+Video game emulator written in C++
+
+- Currently writing a Chip8 Emulator
