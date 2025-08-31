@@ -9,13 +9,15 @@ typedef unsigned char BYTE;
 typedef unsigned short WORD;
 
 const int ROM_SIZE = 0xFFF;
+const int SCREEN_WIDTH = 640;
+const int SCREEN_HEIGHT = 320;
 
 class ChipCPU {
   public:
     ~ChipCPU();
     static ChipCPU* Singleton();
 
-    BYTE m_Display[640][320];
+    BYTE m_Display[SCREEN_WIDTH][SCREEN_HEIGHT][3]; // height x width + rgb per pixel
   private:
     ChipCPU();
 
